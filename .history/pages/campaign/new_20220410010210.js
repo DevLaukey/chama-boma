@@ -118,7 +118,7 @@ export default function NewCampaign() {
                         setMinContriInUSD(Math.abs(e.target.value));
                       }}
                     />{" "}
-                    <InputRightAddon children="ONE" />
+                    <InputRightAddon children="ETH" />
                   </InputGroup>
                   {minContriInUSD ? (
                     <FormHelperText>
@@ -160,7 +160,7 @@ export default function NewCampaign() {
                         setTargetInUSD(Math.abs(e.target.value));
                       }}
                     />
-                    <InputRightAddon children="ONE" />
+                    <InputRightAddon children="ETH" />
                   </InputGroup>
                   {targetInUSD ? (
                     <FormHelperText>

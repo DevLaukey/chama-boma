@@ -191,7 +191,7 @@ function investments() {
             creatorId="0x60daf74aAE51804b4b725f1D1a05a135Ae189E2E"
             imageURL="https://images.moneycontrol.com/static-mcnews/2022/01/Plot-01-651x435.jpg?impolicy=website&width=770&height=431"
             id="3"
-            target="2000ones"
+            target="2000eth"
             ethPrice="20% p.m"
           />
           <CampaignCard
@@ -200,7 +200,7 @@ function investments() {
             creatorId="0x60daf74aAE51804b4b725f1D1a05a135Ae189E2E"
             imageURL="https://i.insider.com/61efe1a2702f4b001866d4db?width=700"
             id="3"
-            target="2000ones"
+            target="2000eth"
             ethPrice="20% p.m"
           />
           <CampaignCard
@@ -209,7 +209,7 @@ function investments() {
             creatorId="0x60daf74aAE51804b4b725f1D1a05a135Ae189E2E"
             imageURL="https://www.capitalfm.co.ke/business/files/2020/03/stocks.jpg"
             id="3"
-            target="2000ones"
+            target="2000eth"
             ethPrice="20% p.m"
           />
         </SimpleGrid>

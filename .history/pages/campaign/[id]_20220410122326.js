@@ -209,7 +209,7 @@ export default function CampaignSingle({
               </Text>
               <Link
                 color="teal.500"
-                href={`https://etherscan.io/token/${id}`}
+                href={`https://harmony.etherscan.io/address/${id}`}
                 isExternal
               >
                 View on Harmony Etherscan <ExternalLinkIcon mx="2px" />
@@ -221,7 +221,7 @@ export default function CampaignSingle({
                     stat={`${web3.utils.fromWei(
                       minimumContribution,
                       "ether"
-                    )} ONE ($${getWEIPriceInUSD(
+                    )} ETH ($${getWEIPriceInUSD(
                       ETHPrice,
                       minimumContribution
                     )})`}
@@ -344,7 +344,9 @@ export default function CampaignSingle({
                 <Box mt={10}>
                   <form onSubmit={handleSubmit(onSubmit)}>
                     <FormControl id="value">
-                      <FormLabel>Amount in ONE you want to remit.</FormLabel>
+                      <FormLabel>
+                        Amount in ONE you want to remit.
+                      </FormLabel>
                       <InputGroup>
                         {" "}
                         <Input
