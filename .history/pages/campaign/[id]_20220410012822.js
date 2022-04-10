@@ -338,7 +338,7 @@ export default function CampaignSingle({
                   fontSize={{ base: "2xl", sm: "3xl" }}
                   color={useColorModeValue("white.600", "gray.200")}
                 >
-                  Remit your Chama Contribution.
+                  Remit your money for a better chama experience.
                 </Heading>
 
                 <Box mt={10}>
