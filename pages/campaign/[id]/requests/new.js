@@ -105,7 +105,7 @@ export default function NewRequest() {
                   />
                 </FormControl>
                 <FormControl id="value">
-                  <FormLabel>Amount in Ether</FormLabel>
+                  <FormLabel>Amount in Harmony ONE</FormLabel>
                   <InputGroup>
                     {" "}
                     <Input
