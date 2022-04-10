@@ -283,7 +283,7 @@ export default function Requests({
   return (
     <div>
       <Head>
-        <title>Campaign Withdrawal Requests</title>
+        <title>Chama Withdrawal Requests</title>
         <meta name="description" content="Create a Withdrawal Request" />
         <link rel="icon" href="/logo.svg" />
       </Head>
@@ -305,7 +305,7 @@ export default function Requests({
               <Text as="span" fontWeight={"bold"} fontSize="lg">
                 {balance > 0
                   ? web3.utils.fromWei(balance, "ether")
-                  : "0, Become a Donor 😄"}
+                  : "0, Become a Member  😄"}
               </Text>
               <Text
                 as="span"
@@ -445,7 +445,7 @@ export default function Requests({
                   as="h4"
                   size="md"
                 >
-                  No Requests yet for {name} Campaign
+                  No Requests yet for {name} 
                 </Heading>
                 <Text
                   textAlign={useBreakpointValue({ base: "center" })}
@@ -453,7 +453,7 @@ export default function Requests({
                   fontSize="sm"
                 >
                   Create a Withdrawal Request to Withdraw funds from the
-                  Chain😄
+                  Chama 😄
                 </Text>
 
                 <Button
