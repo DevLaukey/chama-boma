@@ -156,7 +156,7 @@ function CampaignCard({
               >
                 <Text as="span" fontWeight={"bold"}>
                   {balance > 0
-                    ? "Acc Balance:"+web3.utils.fromWei(balance, "ether")
+                    ? "Acc Balance:" + web3.utils.fromWei(balance, "ether")
                     : "Join this chama"}
                 </Text>
                 <Text
@@ -244,7 +244,8 @@ export default function Home({ campaigns }) {
             as="h1"
             py={6}
           >
-            ~Transparent ~Reliable ~Accountable <br />Platform you can trust
+            ~Transparent ~Reliable ~Accountable <br />
+            <i>Value for every shilling ... </i>
           </Heading>
           <NextLink href="/campaign/new">
             <Button
