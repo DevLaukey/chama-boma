@@ -139,7 +139,7 @@ export default function CampaignSingle({
       const accounts = await web3.eth.getAccounts();
       await campaign.methods.contibute().send({
         from: accounts[0],
-        value: web3.utils.toWei(data.value, "ONE"),
+        value: web3.utils.toWei(data.value, "wei"),
       });
       router.push(`/campaign/${id}`);
       setAmountInUSD(null);
