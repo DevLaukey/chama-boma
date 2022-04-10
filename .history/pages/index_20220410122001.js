@@ -180,7 +180,7 @@ function CampaignCard({
               </Box>
 
               <Text fontSize={"md"} fontWeight="normal">
-                target of {web3.utils.fromWei(target, "ether")} ONE ($
+                target of {web3.utils.fromWei(target, "ether")} ETH ($
                 {getWEIPriceInUSD(ethPrice, target)})
               </Text>
               <Progress

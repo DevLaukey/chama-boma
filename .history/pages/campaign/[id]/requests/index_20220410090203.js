@@ -125,7 +125,7 @@ const RequestRow = ({
       <Td>
         <Link
           color="teal.500"
-          href={`https://poygon-mainnet.etherscan.io/address/${request.recipient}`}
+          href={`https://rinkeby.etherscan.io/address/${request.recipient}`}
           isExternal
         >
           {" "}
@@ -304,7 +304,7 @@ export default function Requests({
               Chama Balance :{" "}
               <Text as="span" fontWeight={"bold"} fontSize="lg">
                 {balance > 0
-                  ? web3.utils.fromWei(balance, "ones")
+                  ? web3.utils.fromWei(balance, "ether")
                   : "0, Become a Member  😄"}
               </Text>
               <Text
@@ -315,7 +315,7 @@ export default function Requests({
                 fontSize="lg"
               >
                 {" "}
-                ONE
+                ETH
               </Text>
               <Text
                 as="span"

@@ -117,7 +117,7 @@ export default function NewRequest() {
                       }}
                       step="any"
                     />{" "}
-                    <InputRightAddon children="ONE" />
+                    <InputRightAddon children="ETH" />
                   </InputGroup>
                   {inUSD ? (
                     <FormHelperText>
@@ -128,7 +128,7 @@ export default function NewRequest() {
 
                 <FormControl id="recipient">
                   <FormLabel htmlFor="recipient">
-                    Recipient Harmony Wallet Address
+                    Recipient Ethereum Wallet Address
                   </FormLabel>
                   <Input
                     name="recipient"

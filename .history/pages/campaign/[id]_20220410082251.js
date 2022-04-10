@@ -139,7 +139,7 @@ export default function CampaignSingle({
       const accounts = await web3.eth.getAccounts();
       await campaign.methods.contibute().send({
         from: accounts[0],
-        value: web3.utils.toWei(data.value, "ONE"),
+        value: web3.utils.toWei(data.value, "ether"),
       });
       router.push(`/campaign/${id}`);
       setAmountInUSD(null);
@@ -209,10 +209,10 @@ export default function CampaignSingle({
               </Text>
               <Link
                 color="teal.500"
-                href={`https://etherscan.io/token/${id}`}
+                href={`https://rinkeby.etherscan.io/address/${id}`}
                 isExternal
               >
-                View on Harmony Etherscan <ExternalLinkIcon mx="2px" />
+                View on Rinkeby Etherscan <ExternalLinkIcon mx="2px" />
               </Link>
               <Box mx={"auto"} w={"full"}>
                 <SimpleGrid columns={{ base: 1 }} spacing={{ base: 5 }}>
@@ -221,7 +221,7 @@ export default function CampaignSingle({
                     stat={`${web3.utils.fromWei(
                       minimumContribution,
                       "ether"
-                    )} ONE ($${getWEIPriceInUSD(
+                    )} ETH ($${getWEIPriceInUSD(
                       ETHPrice,
                       minimumContribution
                     )})`}
@@ -299,7 +299,7 @@ export default function CampaignSingle({
                         fontWeight={"bold"}
                       >
                         {" "}
-                        ONE
+                        ETH
                       </Text>
                       <Text
                         as="span"
@@ -313,7 +313,7 @@ export default function CampaignSingle({
                     </Box>
 
                     <Text fontSize={"md"} fontWeight="normal">
-                      target of {web3.utils.fromWei(target, "ether")} ONE ($
+                      target of {web3.utils.fromWei(target, "ether")} ETH ($
                       {getWEIPriceInUSD(ETHPrice, target)})
                     </Text>
                     <Progress
@@ -344,7 +344,9 @@ export default function CampaignSingle({
                 <Box mt={10}>
                   <form onSubmit={handleSubmit(onSubmit)}>
                     <FormControl id="value">
-                      <FormLabel>Amount in ONE you want to remit.</FormLabel>
+                      <FormLabel>
+                        Amount in Ether you want to remit.
+                      </FormLabel>
                       <InputGroup>
                         {" "}
                         <Input
@@ -357,7 +359,7 @@ export default function CampaignSingle({
                           step="any"
                           min="0"
                         />{" "}
-                        <InputRightAddon children="ONE" />
+                        <InputRightAddon children="ETH" />
                       </InputGroup>
                       {amountInUSD ? (
                         <FormHelperText>

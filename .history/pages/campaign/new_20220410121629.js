@@ -160,7 +160,7 @@ export default function NewCampaign() {
                         setTargetInUSD(Math.abs(e.target.value));
                       }}
                     />
-                    <InputRightAddon children="ONE" />
+                    <InputRightAddon children="ETH" />
                   </InputGroup>
                   {targetInUSD ? (
                     <FormHelperText>

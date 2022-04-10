@@ -6,10 +6,10 @@ const compiledFactory = require('./build/CampaignFactory.json');
 require('dotenv').config();
 
 
-const provider = new HDWalletProvider({
-    mnemonic: process.env.mnemonic,
-    providerOrUrl: process.env.link 
-});
+const provider = new HDWalletProvider(
+    process.env.mnemonic,
+    process.env.link
+);
 
 const web3 = new Web3(provider);
 const deploy = async () => {
