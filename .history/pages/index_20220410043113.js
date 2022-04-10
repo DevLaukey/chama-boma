@@ -265,7 +265,7 @@ export default function Home({ campaigns }) {
           <HStack spacing={2}>
             <SkeletonCircle size="4" />
             <Heading as="h2" size="lg">
-              Open Chamas
+              Open Chama
             </Heading>
           </HStack>
 
@@ -330,7 +330,7 @@ export default function Home({ campaigns }) {
             For any queries raise an issue on{" "}
             <Link
               color="teal.500"
-              href="https://client.aragon.org/#/women/0x65e9076526c2abc94d1d916b7df6900593d81153/ "
+              href="https://client.aragon.org/#/women/0x65e9076526c2abc94d1d916b7df6900593d81153/"
               isExternal
             >
               the ChamaBomba DAO community <ExternalLinkIcon mx="2px" />
