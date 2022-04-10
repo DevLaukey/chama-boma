@@ -209,7 +209,7 @@ export default function CampaignSingle({
               </Text>
               <Link
                 color="teal.500"
-                href={`https://harmony.etherscan.io/address/${id}`}
+                href={`https://polygon-mainnet.etherscan.io/address/${id}`}
                 isExternal
               >
                 View on Polygon Etherscan <ExternalLinkIcon mx="2px" />

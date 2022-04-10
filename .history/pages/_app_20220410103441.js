@@ -22,7 +22,7 @@ function MyApp({ Component, pageProps }) {
           connectors={{
             walletconnect: {
               rpcUrl:
-                "https://api.s0.b.hmny.io",
+                "https://rinkeby.infura.io/v3/08ac79d88b5d4aea961ca36af7ea6ee7",
             },
           }}
         >

@@ -209,10 +209,10 @@ export default function CampaignSingle({
               </Text>
               <Link
                 color="teal.500"
-                href={`https://harmony.etherscan.io/address/${id}`}
+                href={`https://rinkeby.etherscan.io/address/${id}`}
                 isExternal
               >
-                View on Polygon Etherscan <ExternalLinkIcon mx="2px" />
+                View on Rinkeby Etherscan <ExternalLinkIcon mx="2px" />
               </Link>
               <Box mx={"auto"} w={"full"}>
                 <SimpleGrid columns={{ base: 1 }} spacing={{ base: 5 }}>

@@ -9,7 +9,7 @@ if (typeof window !== "undefined" && typeof window.web3 !== "undefined") {
   // we are on the server *OR* meta mask is not running
   // creating our own provider
   const provider = new Web3.providers.HttpProvider(
-    "https://api.s2.b.hmny.io"
+    "https://polygon-mainnet.infura.io/v3/eb680cce233c486caefa73cc53ce5bc8"
   );
 
   web3 = new Web3(provider);

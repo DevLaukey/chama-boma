@@ -22,7 +22,8 @@ function MyApp({ Component, pageProps }) {
           connectors={{
             walletconnect: {
               rpcUrl:
-                "https://api.s0.b.hmny.io",
+                "https://api.s0.b.hmny.io
+",
             },
           }}
         >

@@ -21,8 +21,7 @@ function MyApp({ Component, pageProps }) {
           chainId={4}
           connectors={{
             walletconnect: {
-              rpcUrl:
-                "https://api.s0.b.hmny.io",
+              rpcUrl: "https://api.s0.b.hmny.io",
             },
           }}
         >
