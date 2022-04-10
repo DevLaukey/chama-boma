@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 html,
 body,#root {
   padding: 0;
@@ -25,4 +25,8 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.value{
+  font-family: 'Pacifico', cursive;
+  font-size: "120px"
 }

@@ -245,7 +245,7 @@ export default function Home({ campaigns }) {
             py={6}
           >
             ~Transparent ~Reliable ~Accountable <br />
-            <i>Value for every shilling ... </i>
+            <i className="value">Value for every shilling ... </i>
           </Heading>
           <NextLink href="/campaign/new">
             <Button
